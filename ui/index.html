@@ -11,52 +11,61 @@
     </head>
     <body>
         
-        <div class="test">
-            <!--    The grid that will be places on the buttom of the data for placement   -->
-            <div class="grid-container">
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
+        <div id="app">
+
+            <div class="test">
+                <!--    The grid that will be places on the buttom of the data for placement   -->
+                <div class="grid-container">
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div> 
             </div> 
-        </div> 
-        
-        
-        
-        <!--    The actual data that goes on top of the grid!   -->
-        <div class="data-container">
-            <div class="data-item">
-                <div id="image"></div>
-                <div class="container">
-                    <p>I hadday mate</p>
+
+            <!--    The actual data that goes on top of the grid!   -->
+            <div class="data-container">
+                <div class="data-item">
+                    <img class="image" src="./pictures/coca-cola.png"/>
+                    <div class="container">
+                        <p>Coca-Cola</p>
+                    </div>
                 </div>
+
+
+                <div class="data-item">
+                    <img class="image" src="./pictures/bacon-burger.png"/>
+                    <div class="container">
+                        <p>Bacon Burger</p>
+                    </div>
+                </div>
+
+
+            </div> 
+
+            <div class="button-row">
+                <input type="text" placeholder="Search" class="button" id="search">
+                <input type="text" class="button" value="0" id="quantity">
+                <button type="button" class="button" style="width: 120px;">Use</button>
+                <button type="button" class="button" style="width: 120px;" id="drop">Drop</button>
             </div>
-        </div> 
-
-        <div class="button-row">
-            <input type="text" placeholder="Search" class="button" id="search">
-            <input type="text" class="button" value="0" id="quantity">
-            <button type="button" class="button" style="width: 120px;">Use</button>
-            <button type="button" class="button" style="width: 120px;" id="drop">Drop</button>
         </div>
-
-
 
     </body>
 </html>
