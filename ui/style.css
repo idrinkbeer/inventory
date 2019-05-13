@@ -1,0 +1,117 @@
+/*
+    BASE SETTINGS   
+*/
+
+body{ background-color: transparent !important; overflow-y: hidden !important; overflow-x: hidden !important}
+
+/*
+    CONTAINER'S
+*/
+.grid-container
+{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: absolute;
+    overflow-y: scroll;
+    display: grid;
+    padding: 10px;
+    width: 517px;
+    height: 500px;
+    left: 300px;
+    top: 200px;
+}
+
+.data-container 
+{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: absolute;
+    display: grid;
+    padding: 10px;
+    width: 517px;
+    left: 300px;
+    top: 200px;
+}
+
+/*
+    ITEM'S
+*/
+.grid-item 
+{
+    box-shadow: 0 23px 0 0 rgba(41, 41, 41, 0.781);
+    background-color: rgba(182, 182, 182, 0.205);
+    border: 1px solid rgba(160, 160, 160, 0.8);
+    margin-bottom: 25px;
+}
+
+.data-item
+{
+    background-color: rgba(182, 182, 182, 0.438);
+    border: 1px solid rgba(160, 160, 160, 0.8);
+    margin-bottom: 30px;
+}
+
+.data-item, .grid-item
+{
+    height: 90px;
+    width: 90px;
+}
+
+/*
+    BUTTON'S
+*/
+.button-row 
+{
+    grid-template-columns: auto;
+    position: absolute;
+    display: grid;
+    padding: 10px;
+    width: 100px;
+    left: 850px;
+    top: 250px;
+}
+
+.button 
+{
+    background-color: rgba(59, 59, 59, 0.493);
+    border-radius: 1px 1px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    width: 90px;
+    border: 3px;
+    margin: 5px;
+}
+
+#search:focus ,#quantity:focus 
+{
+    box-shadow: 0 0 10px  #3b5998;
+    border: 1px solid  #3b5998;
+}
+
+.button:hover 
+{
+    box-shadow: 0 0 10px  #3b5998;
+    border: 1px solid  #3b5998;
+}
+
+/*
+    CONTAINER
+*/
+
+.container
+{
+    background-color: rgba(0, 0, 0, 0.349);
+    position: relative;
+    height: 23px;
+    width: 92px;
+    top: 78px;
+    left : -1px;
+}
+
+.container p 
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    line-height: 22px;
+    font-size: 13px; 
+    color: white;
+}

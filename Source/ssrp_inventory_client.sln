@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssrp_inventory_client", "ssrp_inventory_client\ssrp_inventory_client.csproj", "{24F954D1-495D-4E74-8D58-8C88CB99CBC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssrp_inventory_server", "ssrp_inventory_server\ssrp_inventory_server.csproj", "{1E4CEB9E-BC37-4620-8ECE-662E616DA956}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24F954D1-495D-4E74-8D58-8C88CB99CBC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24F954D1-495D-4E74-8D58-8C88CB99CBC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24F954D1-495D-4E74-8D58-8C88CB99CBC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24F954D1-495D-4E74-8D58-8C88CB99CBC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E4CEB9E-BC37-4620-8ECE-662E616DA956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4CEB9E-BC37-4620-8ECE-662E616DA956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4CEB9E-BC37-4620-8ECE-662E616DA956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4CEB9E-BC37-4620-8ECE-662E616DA956}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E465533-218C-440F-B6DA-77D825220A19}
+	EndGlobalSection
+EndGlobal
