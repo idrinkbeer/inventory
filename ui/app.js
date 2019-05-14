@@ -7,6 +7,7 @@ var images =
 {
     ["burger"] : "pictures/bacon-burger.png",
     ["coca-cola"] : "pictures/coca-cola.png",
+    ["weed_pouch"] : "pictures/weed_pouch.png"
 }
 
 $(function(){
@@ -24,27 +25,22 @@ $(function(){
         }
     })
 
-
-
     window.addEventListener("message", function(event)
     {
         if(event.data.showing == true)
         {
             $("body").fadeIn(500);
-            
-            
-            
         }
         else if(event.data.showing == false) 
         {
             $("body").fadeOut(500);
+            $.post('http://inventory/disable_nui_focus', JSON.stringify({}));
         }
         else if(event.data.add_and_remove = true)
         {
             if (count <= max)
             {
                 count += 1;
-                console.log("here still")
                 $(".data-container").append("<div class='data-item'><img class='image' src='" + images[event.data.image] + "'/><div class='container'><p>"+ event.data.text +"</p></div></div>");
             }
             else
@@ -57,6 +53,7 @@ $(function(){
             if (count >= low)
             {
                 count -= 1;
+                // add remove object code here!
             }
             else
             {
