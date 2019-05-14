@@ -1,8 +1,7 @@
 /*
     BASE SETTINGS   
 */
-
-body{ background-color: #273c7513 !important; overflow-y: hidden !important; overflow-x: hidden !important}
+body {background-color: #273c7513 !important; overflow-y: hidden !important; overflow-x: hidden !important}
 
 /*
     CONTAINER'S
@@ -35,11 +34,14 @@ body{ background-color: #273c7513 !important; overflow-y: hidden !important; ove
 {
     box-shadow: 0 23px 0 0 rgba(32, 32, 32, 0.589);
     background-color: rgba(29, 29, 29, 0.37);
+    margin: 2px;
 }
 
 .data-item
 {
     background-color: rgba(182, 182, 182, 0);
+    margin: 2px;
+    margin-bottom: 26.5px;
 }
 
 .data-item, .grid-item
@@ -47,7 +49,37 @@ body{ background-color: #273c7513 !important; overflow-y: hidden !important; ove
     padding: 3px;
     height: 90px;
     width: 100px;
-    margin: 3px
+}
+
+/*
+    CONTAINER
+*/
+.container
+{
+    background-color: rgba(0, 0, 0, 0.349);
+    position: relative;
+    height: 23px;
+    width: 105px;
+    top: -13px;
+    left: -3px;
+}
+
+.container p 
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    line-height: 22px;
+    font-size: 13px; 
+    color: #95a5a6;
+}
+
+/*
+    Image
+*/
+.image 
+{
+    height: 90px;
+    width: 100px;
 }
 
 /*
@@ -86,36 +118,4 @@ body{ background-color: #273c7513 !important; overflow-y: hidden !important; ove
 {
     box-shadow: 0 0 10px  #3b5998;
     border: 1px solid  #3b5998;
-}
-
-/*
-    CONTAINER
-*/
-.container
-{
-    background-color: rgba(0, 0, 0, 0.349);
-    position: relative;
-    height: 23px;
-    width: 105px;
-    top: -13px;
-    left: -3px;
-}
-
-.container p 
-{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    line-height: 22px;
-    font-size: 13px; 
-    color: #95a5a6;
-}
-
-/*
-    Image
-*/
-
-.image 
-{
-    height: 90px;
-    width: 100px;
 }
