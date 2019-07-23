@@ -1,0 +1,10 @@
+Food 
+{
+    "burger"
+    "coca-cola"   
+}
+
+Items
+{
+    "weed_pouch"
+}
