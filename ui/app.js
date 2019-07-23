@@ -1,71 +1,33 @@
-// Variables
-var count = 0
-var max = 20
-var low = 0
-
-var images = 
-{
-    ["burger"] : "pictures/bacon-burger.png",
-    ["coca-cola"] : "pictures/coca-cola.png",
-}
-
 $(function(){
-
-    $("body").hide();
-    
-    // Dragable item Code
-    $(".data-item").draggable();
-    
-    // Removing a object
-    $("#drop").droppable({
-        drop : function(event, ui)
-        {
-            ui.draggable.remove();
-        }
-    })
-
-
-
+    // Base settings
+    //$("html").hide();
+    $("#right-grid").hide();
     window.addEventListener("message", function(event)
     {
-        if(event.data.showing == true)
+        if(event.data.action == "display")
         {
-            $("body").fadeIn(500);
-            
-            
-            
-        }
-        else if(event.data.showing == false) 
-        {
-            $("body").fadeOut(500);
-        }
-        else if(event.data.add_and_remove = true)
-        {
-            if (count <= max)
-            {
-                count += 1;
-                console.log("here still")
-                $(".data-container").append("<div class='data-item'><img class='image' src='" + images[event.data.image] + "'/><div class='container'><p>"+ event.data.text +"</p></div></div>");
-            }
-            else
-            {
-                console.log("Inventory is full!");
-            }
-        }
-        else if(event.data.add_and_remove = false)
-        {
-            if (count >= low)
-            {
-                count -= 1;
-            }
-            else
-            {
-                console.log("Inventory is empty!");
-            }
-        }
-        else 
-        {
-            print("Invalid Syntax at removing or adding inventory items.") 
+            $("html").fadeIn(1000);
         }
     })
+
+
+
+    document.addEventListener("keydown", (e) =>
+    {
+        if(e.key == "k")
+        {
+            $.post('http://inventory/exit_focus', JSON.stringify({}));
+            $("html").fadeOut(1000);
+        }
+    })
+
+
+    // Search filtering
+    $("#search").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".inventory-item").filter(function() 
+        {
+            // Add code for filtering
+        });
+    });
 });

@@ -1,22 +1,22 @@
-local toggled = false;
-
+--------------------------------------------------------------------
+--                          Main Thread                           --
+--------------------------------------------------------------------
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
-        if(IsControlJustPressed(0, 318)) then
-            toggled = not toggled;
-            SendNUIMessage({showing = toggled});
+        if(IsControlJustPressed(0, 311)) then
+            SendNUIMessage({action = "display"})
+            SetNuiFocus(true, true)
         end
     end
 end)
+--------------------------------------------------------------------
+--                          Functions                             --
+--------------------------------------------------------------------
 
-
--- Add inventory item event
-RegisterNetEvent("inventory:add_and_remove") 
-AddEventHandler("inventory:add_and_remove", function(_image, _text, _add_and_remove)
-    SendNUIMessage({
-        image = _image,
-        text = _text,
-        add_and_remove = _add_and_remove
-    });
+--------------------------------------------------------------------
+--                         NUI Callbacks                         --
+--------------------------------------------------------------------
+RegisterNUICallback("exit_focus", function()
+    SetNuiFocus(false, false)
 end)

@@ -10,6 +10,7 @@ files {
     --Pictures
     'ui/pictures/coca-cola.png',
     'ui/pictures/bacon-burger.png',
+    'ui/pictures/weed_pouch.png',
 }
 
 ui_page {

@@ -1,90 +1,187 @@
-/*
-    BASE SETTINGS   
-*/
-body {background-color: #273c7513 !important; overflow-y: hidden !important; overflow-x: hidden !important}
+ /*   BASE SETTINGS   */
+body 
+{
+    background-color: #ffffff3b !important; 
+    overflow-y: hidden !important; 
+    overflow-x: hidden !important
+}
 
-/*
-    CONTAINER'S
-*/
-.grid-container
+/* Back [LEFT] Inventory */
+.buttom-left-inventory-container
 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 30px;
     position: absolute;
     display: grid;
-    width: 517px;
-    height: 500px;
-    left: 290px;
+    height: 52%;
+    width: 30%;
     top: 200px;
+    left: 12%;
 }
 
-.data-container 
+.buttom-left-inventory-item 
 {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    position: absolute;
-    display: grid;
-    width: 517px;
-    left: 290px;
-    top: 200px;
+    box-shadow: 0px 26px rgba(29, 29, 29, 0.658);
+    background-color: rgba(29, 29, 29, 0.384);
+    height: 110px;
 }
 
-/*
-    ITEM'S
-*/
-.grid-item 
+.buttom-left-inventory-item p 
 {
-    box-shadow: 0 23px 0 0 rgba(32, 32, 32, 0.589);
-    background-color: rgba(29, 29, 29, 0.37);
-    margin: 2px;
-}
-
-.data-item
-{
-    background-color: rgba(182, 182, 182, 0);
-    margin: 2px;
-    margin-bottom: 26.5px;
-}
-
-.data-item, .grid-item
-{
-    padding: 3px;
-    height: 90px;
-    width: 100px;
-}
-
-/*
-    CONTAINER
-*/
-.container
-{
-    background-color: rgba(0, 0, 0, 0.349);
-    position: relative;
-    height: 23px;
-    width: 105px;
-    top: -13px;
-    left: -3px;
-}
-
-.container p 
-{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(29, 29, 29, 0.685);
     text-align: center;
-    line-height: 22px;
-    font-size: 13px; 
-    color: #95a5a6;
+    position: relative;
+    color: white;
+    height: 25%;
+    top: 85%;
 }
 
-/*
-    Image
-*/
-.image 
+.buttom-left-inventory-item img
 {
-    height: 90px;
-    width: 100px;
+    position: absolute;
+    margin-right : auto;
+    margin-left: auto;
+    display: block;
+    height: 20%;
+    width: 20%;
 }
 
-/*
-    BUTTON'S
-*/
+/* Top [LEFT] Inventory */
+.top-left-inventory-container
+{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 30px;
+    position: absolute;
+    display: grid;
+    height: 52%;
+    width: 30%;
+    top: 200px;
+    left: 12%;
+}
+
+.top-left-inventory-item 
+{
+    background-color: rgba(29, 29, 29, 0.288);
+    height: 110px;
+}
+
+.top-left-inventory-item p 
+{
+    background-color: rgba(29, 29, 29, 0.507);
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 25%;
+    top: 85%;
+}
+
+.top-left-inventory-item img
+{
+    position: absolute;
+    margin-right : auto;
+    margin-left: auto;
+    display: block;
+    width: 20%;
+    height: 20%;
+}
+
+
+
+/* Back [RIGHT] Inventory */
+.buttom-right-inventory-container
+{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 30px;
+    position: absolute;
+    display: grid;
+    height: 52%;
+    width: 30%;
+    top: 200px;
+    left: 55%;
+}
+
+.buttom-right-inventory-item 
+{
+    box-shadow: 0px 26px rgba(29, 29, 29, 0.658);
+    background-color: rgba(29, 29, 29, 0.384);
+    height: 110px;
+}
+
+.buttom-right-inventory-item p 
+{
+    background-color: rgba(29, 29, 29, 0.685);
+    text-align: center;
+    position: relative;
+    color: white;
+    height: 25%;
+    top: 85%;
+}
+
+.buttom-right-inventory-item img
+{
+    position: absolute;
+    margin-right : auto;
+    margin-left: auto;
+    display: block;
+    height: 20%;
+    width: 20%;
+}
+
+/* Top [RIGHT] Inventory */
+.top-right-inventory-container
+{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 30px;
+    position: absolute;
+    display: grid;
+    height: 52%;
+    width: 30%;
+    top: 200px;
+    left: 55%;
+}
+
+.top-right-inventory-item 
+{
+    background-color: rgba(29, 29, 29, 0.288);
+    height: 110px;
+}
+
+.top-right-inventory-item p 
+{
+    background-color: rgba(29, 29, 29, 0.507);
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 25%;
+    top: 85%;
+}
+
+.top-right-inventory-item img
+{
+    position: absolute;
+    margin-right : auto;
+    margin-left: auto;
+    display: block;
+    width: 20%;
+    height: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Button's    */
 .button-row 
 {
     grid-template-columns: auto;
@@ -98,7 +195,7 @@ body {background-color: #273c7513 !important; overflow-y: hidden !important; ove
 
 .button 
 {
-    background-color: rgba(59, 59, 59, 0.493);
+    background-color: rgba(29, 29, 29, 0.384);
     border-radius: 1px 1px;
     text-align: center;
     color: white;
@@ -106,16 +203,4 @@ body {background-color: #273c7513 !important; overflow-y: hidden !important; ove
     width: 90px;
     border: 3px;
     margin: 5px;
-}
-
-#search:focus ,#quantity:focus 
-{
-    box-shadow: 0 0 10px  #3b5998;
-    border: 1px solid  #3b5998;
-}
-
-.button:hover 
-{
-    box-shadow: 0 0 10px  #3b5998;
-    border: 1px solid  #3b5998;
 }
